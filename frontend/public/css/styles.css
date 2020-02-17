@@ -1,0 +1,649 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  width: 15%;
+  height: auto;
+  align-items: center;
+  background-color: #31879b;
+  /*max-width: 280px;*/
+}
+
+body {
+  /*display: flex;*/
+  min-height: 100vh;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  border-bottom: 1px solid #0cadb7;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.flecha_menu_desplegable {
+  margin-right: 10px;
+  font-size: 14px;
+  position: relative;
+  top: 20px;
+}
+
+.user {
+  margin-left: 10px;
+  display: flex;
+  margin-top: 14px;
+}
+
+.user i {
+  margin-right: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 5px;
+}
+
+.user span {
+  position: relative;
+  top: 5px;
+  color: white;
+}
+
+.contenedor_total {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.seccion_campañas {
+  width: 85%;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+.secciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secciones ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.secciones ul li {
+  list-style: none;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  border-bottom: 1px solid #2f7072;
+}
+
+.secciones ul li:hover {
+  background-color: #246c7c;
+}
+
+.secciones ul li a {
+  text-decoration: none;
+}
+
+.secciones ul li a:hover {
+  background-color: transparent;
+}
+
+.secciones ul li a i {
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.nav_sub_menu li {
+  background-color: #2a6f7f;
+}
+
+.nav_sub_menu li:hover {
+  background-color: #0cadb7;
+}
+
+.nav_icono_responsive {
+  display: none;
+}
+
+/* .nav_icono_escritorio_campanas {
+  background-color: red;
+} */
+
+.campañas_flechita_desplegable:hover {
+  background-color: #0cadb7 !important;
+}
+
+.tabs .tab a {
+  color: #6aab94;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+  background-color: #54c4a7;
+  color: white;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+  background-color: #54c4a7;
+  color: white;
+} /*Background and text color when a tab is active*/
+
+.tabs .tab a:focus.active {
+  background-color: #54c4a7;
+  color: white;
+}
+
+.tabs .indicator {
+  background-color: #82f2d5;
+} /*Color of underline*/
+
+.activo {
+  background-color: #34c0d7;
+}
+
+.barra_superior {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  background-color: #31879b;
+  align-items: center;
+}
+
+.barra_superior i {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+.barra_superior_der {
+  display: flex;
+  height: 100%;
+  background-color: #54c4a7;
+}
+
+#hamburguesa {
+  cursor: pointer;
+}
+
+/* Seccion campañas */
+
+.btn_crear_nuevo {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.tablas {
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+.acciones_iconos {
+  display: flex;
+}
+
+.acciones_iconos i {
+  margin-right: 10px;
+}
+
+.titulo_seccion {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  margin: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.titulo_seccion h4 {
+  color: #0cadb7;
+}
+
+.titulo_seccion p {
+  color: grey;
+}
+
+.informacion_filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.informacion_filtros span {
+  margin-left: 20px;
+  color: grey;
+}
+
+.informacion_filtros form {
+  width: 200px;
+  margin-right: 20px;
+}
+
+/* Seccion campañas */
+
+/* Seccion Campañas Crear */
+
+.contenedor_form_crear_campana {
+  display: flex;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.programar_tipos_envio {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_envio_inmediato {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_envio_inmediato span {
+  font-weight: bold;
+}
+
+.card_envio_programado_varios {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.card_envio_programado_varios h5 {
+  font-weight: bold;
+}
+
+.card_envio_programado_varios p {
+  font-weight: bold;
+}
+
+.card_envio_programado_cada_uno {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.enviar_campana {
+  display: flex;
+  flex-direction: column;
+}
+
+.vista_previa_campanas {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: auto;
+}
+
+.form_crear_campañas {
+  width: 100%;
+  height: auto;
+}
+
+.elegir_suscriptores {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.elegir_suscriptores p {
+  color: grey;
+}
+
+.elegir_plantilla {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.elegir_plantilla p {
+  color: grey;
+}
+
+.previa_datos {
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+.previa_datos_campaña_izq {
+  display: flex;
+  justify-content: space-between;
+}
+
+.previa_datos_campaña_izq_nombre p b {
+  color: grey;
+}
+
+.previa_datos_campaña_izq_descripcion p b {
+  color: grey;
+}
+
+.previa_datos_campaña_der {
+  display: flex;
+  justify-content: space-between;
+}
+
+.previa_datos_campaña_der_remitente p b {
+  color: grey;
+}
+
+.previa_datos_campaña_der_email_respuesta p b {
+  color: grey;
+}
+
+.previa_datos_campaña_izq_nombre {
+  width: 50%;
+}
+
+.previa_datos_campaña_der_remitente {
+  width: 50%;
+}
+
+.previa_datos_campaña_der_email_respuesta {
+  width: 50%;
+}
+
+.previa_datos_campaña_izq_descripcion {
+  width: 50%;
+}
+
+.previa_suscriptores_lista {
+  padding: 10px;
+}
+
+.btn_cancelar {
+  background-color: #7c7c7c;
+}
+
+.btn_cancelar:hover {
+  background-color: #aaaaaa;
+}
+
+.linea_tiempo {
+  margin-top: 20px;
+}
+
+/* Seccion Campañas Crear */
+
+/* Seccion LISTAS */
+.nombre_lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nombre_lista_input_icono {
+  display: flex;
+}
+
+.nombre_lista_input_icono i {
+  color: #54c4a7;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+
+.importar_suscriptores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.opcion_csv {
+  width: 30%;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.opcion_csv i {
+  font-size: 50px;
+  color: #54c4a7;
+}
+
+.opcion_manual {
+  width: 30%;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 12px -7px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.opcion_manual i {
+  font-size: 50px;
+  color: #54c4a7;
+}
+
+.csv {
+  margin-top: 20px;
+}
+
+.manual {
+  margin-top: 20px;
+}
+
+.cabecera_tabla_importar_csv {
+  color: #1f4e59;
+}
+
+.agregar_manualmente {
+  display: flex;
+  margin-left: 20px;
+}
+
+.agregar_manualmente .input-field {
+  padding-right: 15px;
+}
+
+.icono_add i {
+  color: #54c4a7;
+  font-size: 24px;
+  width: 300;
+  height: 300;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn_guardar_lista_csv {
+  margin-left: 20px;
+}
+
+/* Seccion LISTAS */
+
+/* Seccion Diseño */
+
+.seccion_ckeditor {
+  padding: 20px;
+}
+
+.botones_diseño {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.botones_diseño a {
+  margin-right: 15px;
+}
+
+.diseño_plantilla_asunto {
+  width: 80%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+}
+
+/* Seccion Diseño */
+
+/* Footer */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #dddddd;
+  color: grey;
+  align-items: center;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+
+/* Footer */
+
+.nav_icono_responsive {
+  display: none;
+}
+
+.nav_icono_escritorio {
+  display: block;
+}
+
+#seccion_campana_desplegable {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_logo_responsive {
+  display: none;
+}
+
+.name_logo_escritorio {
+  display: block;
+}
+
+/* Media Querys */
+
+@media (max-width: 1230px) {
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .name_logo_responsive {
+    display: block;
+  }
+
+  .name_logo_escritorio {
+    display: none;
+  }
+
+  nav {
+    width: 100px;
+    text-align: center;
+  }
+
+  .logo img {
+    margin-right: 0px;
+  }
+
+  .tablas {
+    overflow-x: auto;
+  }
+
+  .secciones ul li {
+    justify-content: center;
+  }
+
+  .nav_icono_responsive {
+    display: block;
+  }
+
+  .nav_icono_responsive i {
+    font-size: 14px;
+  }
+
+  .nav_icono_escritorio {
+    display: none;
+  }
+
+  .seccion_campañas {
+    width: 100%;
+  }
+
+  .user span {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .agregar_manualmente {
+    flex-direction: column;
+  }
+}
+
+/* Media Querys */
+
+.seccion_ckeditor .ck.ck-editor__editable_inline {
+  border: 1px solid gray;
+}
+
+.cke_dialog_image_url .cke_dialog_ui_hbox_last {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.select-wrapper input.select-dropdown {
+  border-bottom: none;
+  text-align: center;
+  color: #1f4e59;
+}
+
+th {
+  padding: 0px 15px;
+}
